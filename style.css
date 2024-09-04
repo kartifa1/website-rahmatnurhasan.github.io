@@ -1,0 +1,948 @@
+/* Mengatur lebar scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Mengatur warna track scrollbar */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Mengatur warna thumb scrollbar */
+  ::-webkit-scrollbar-thumb {
+	background: var(--btn-hovered);
+	-webkit-border-radius: 1ex;
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  /* Mengubah warna thumb scrollbar saat di-hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-first);
+  }
+  ::-webkit-scrollbar-corner {
+	background: transparent;
+}
+::selection{
+    color: #fff;
+    background: #6665ee;
+  }
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-first: #5d5fef;
+    --bg-second: #F6F7FB;
+    --bgijumbotron: #f6f7fb;
+    --secondary: #737373;
+    --btn-hovered: #5457ee;
+    --title: #343a40;
+    --white: #ffffff;
+    --shadow:rgba(0,0,0,0.2);
+    --bg-first-dark:#5053e2;
+}
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: var(--btn-hovered) !important;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: var(--white) !important;
+  font-size: 22px;
+}
+.gotopbtn:hover{
+  color: var(--title) !important;
+}
+/* navbar */
+/* navbar */
+/* Navbar Styling */
+.navbar {
+  background-color: var(--bg-second); /* Background color */
+  padding-top: 0.75rem; /* Adjust padding for better spacing */
+  padding-bottom: 0.75rem; /* Adjust padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.navbar-brand {
+  font-size: 1.6rem; /* Larger font size for prominence */
+  font-weight: 700; /* Bolder font weight */
+  background-color: var(--bg-first);
+  color: var(--white);
+  width: 70px; /* Slightly larger size */
+  height: 60px; /* Slightly larger size */
+  border-radius: 12px; /* Softer rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar-brand:hover {
+  background-color: var(--btn-hovered); /* Highlight on hover */
+}
+
+.navbar-nav {
+  font-size: 16px !important; /* Larger font size */
+  font-weight: 600 !important; /* Increased font weight */
+  margin-top: 5px; /* Added top margin */
+}
+
+.navbar-nav .nav-link {
+  color: var(--bgijumbotron);
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  padding: 0.75rem 1rem; /* Enhanced padding for better touch area */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: var(--bg-first);
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjusted position */
+  transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  background-color: var(--btn-hovered); /* Change color on hover */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+  background-image: url('path/to/toggler-icon.svg'); /* Customize icon */
+}
+
+/* Hubungi Button Styling */
+.hubungi .btn {
+  background-color: var(--bg-first);
+  border: none;
+  color: var(--white);
+  padding: 0.5rem 1rem; /* Adjust padding */
+  border-radius: 20px; /* Rounded button */
+  font-weight: 600; /* Bolder text */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for button */
+}
+
+.hubungi .btn:hover {
+  background-color: var(--btn-hovered);
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767.98px) {
+  .navbar-nav {
+      text-align: center; /* Center text */
+  }
+
+  .navbar-nav .nav-link {
+      margin-bottom: 1.5rem; /* Increased spacing for mobile */
+  }
+}
+
+/* cek */
+/* cek cek */
+
+/* cek */
+/* cek cek */
+
+/* Profile */
+/* Profile */
+
+.jumbotron {
+    padding: 2rem 1rem;
+    background-color: var(--bgijumbotron);
+    border-radius: .3rem;
+    padding-bottom: 217px;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.profile-picture {
+    width: 389px;
+    height: 397px;
+    margin-top: 200px;
+    animation: floatImage 2.5s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4.0rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* unduh */
+/* unduh */
+.btn-primary {
+    background-color: var(--bg-first) !important;
+    border-radius: 20px !important;
+    width: 200px !important;
+    height: 70px !important;
+    font-weight: 500 !important;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background: var(--bg-first-dark) !important;
+}
+/* media sosial */
+/* media sosial */
+.bg-white {
+    background-color: var(--bg-first) !important;
+}
+.bg-white:hover{
+    background-color: var(--btn-hovered) !important;
+}
+.icon:hover, .icon:active, .icon:visited {
+    color: var(--btn-hovered);
+}
+
+.title-1 {
+    font-size: 60px;
+    color: var(--title);
+}
+
+.hr-1, .hr-2{
+    background-color: var(--bg-first);
+    width: 157px;
+    margin-bottom: 30px;
+}
+
+.hr-1 {
+    margin-top: 200px;
+}
+
+.hr-2 {
+    margin-top: 30px;
+}
+/* Quoteee */
+/* Quoteee */
+#quote-container {
+    background-color: var(--bg-first);
+}
+#quote {
+    font-size: 30px;
+    max-width: 1300px;
+}
+/* kemampuan */
+/* kemampuan */
+/* Basic styles */
+.skill-bars {
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 450px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.skill-bars .bar {
+  margin: 20px 0;
+  display: flex;
+  position: relative; /* Added for better alignment of percentage */
+}
+
+.skill-bars .bar .info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between info and progress bar */
+  flex: 1; /* Take up remaining space */
+}
+
+.skill-bars .bar .info img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  overflow: hidden;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  margin-right: 10px; /* Add spacing between progress bar and percentage */
+}
+
+@keyframes animate {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  background: #5d5fef; /* Primary color */
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 0.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line.html span {
+  width: 95%;
+}
+
+.bar .progress-line.css span {
+  width: 88%;
+}
+
+.bar .progress-line.java span {
+  width: 60%;
+}
+
+.bar .progress-line.bootstrap span {
+  width: 80%;
+}
+
+.percentage {
+  font-weight: 700;
+  font-size: 16px;
+  color: #5d5fef; /* Primary color */
+  min-width: 50px; /* Adjust width to align with progress bar */
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  animation: showPercentage 1s ease-out;
+}
+
+@keyframes showPercentage {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Ensure the tooltip is centered */
+.tooltip {
+  text-align: center;
+}
+.tooltip-inner {
+  max-width: none; /* Remove max-width restriction */
+}
+.tooltip.bs-tooltip-end .tooltip-arrow {
+  left: 0;
+  transform: translateX(50%);
+}
+
+/* Skill */
+/* Skill */
+/* profil */
+/* profil */
+.title-2 {
+    font-size: 40px;
+    color: var(--title);
+    font-weight: 700;
+}
+
+#skill-main-container {
+    max-width: 1300px;
+}
+
+#skill-picture {
+    height: auto;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.skill-item-picture {
+    width: 53px;
+}
+
+.skill-title {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 !important;
+}
+
+.bg-primary {
+    color: var(--bg-first);
+}
+/* gerak gambar */
+/* gerak gambar */
+/* Gambar Kemampuan */
+.card-2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Rounded corners */
+  transition: transform 0.6s ease, box-shadow 0.6s ease; /* Smooth transitions */
+}
+
+.card-2:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* General card styling */
+.card_preview {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom-in effect on hover */
+.card_preview:hover .card-img-top {
+  transform: scale(1.1); /* Scale the image by 10% */
+}
+
+/* Optional: Additional styling for a smooth hover effect */
+.card-body, .card-footer {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card_preview:hover .card-body,
+.card_preview:hover .card-footer {
+  opacity: 0.8; /* Slightly reduce opacity for a subtle effect */
+}
+
+/* Zoom-in effect for images */
+/* Container styling to ensure proper alignment and overflow handling */
+.col-xl-6, .col-sm-12 {
+  overflow: hidden; /* Hide any overflow caused by zoom effect */
+}
+
+/* Zoom-in effect for images */
+.card_preview1 {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  display: block; /* Ensures image scaling is handled correctly */
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+}
+
+/* Zoom-in effect on hover */
+.card_preview1:hover {
+  transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+
+/* Optional: Enhance the effect with a shadow */
+.card_preview1 {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Initial box-shadow */
+}
+
+.card_preview1:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Increased shadow on hover */
+}
+
+
+/* Skill Bars */
+.skill-bars {
+  margin-top: 20px;
+}
+
+.bar {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.6s ease;
+}
+
+.bar:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.skill-item-picture {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  transition: transform 0.3s ease; /* Smooth transition for image size */
+}
+
+.bar:hover .skill-item-picture {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.progress-line {
+  position: relative;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-line span {
+  display: block;
+  height: 100%;
+  background: var(--bg-first);
+  width: 0;
+  transition: width 1s ease;
+}
+
+/* Skill Bar Specific Colors */
+.html .progress-line span { background: #f16529; }
+.css .progress-line span { background: #2965f1; }
+.java .progress-line span { background: #f7df1e; }
+.bootstrap .progress-line span { background: #563d7c; }
+
+/* Title and HR */
+.title-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  text-align: center; /* Center align the title */
+}
+
+.hr-3 {
+  border: none;
+  background-color: var(--bg-first);
+  border-radius: 10px; /* Rounded corners for the line */
+}
+
+/* Pengalaman */
+/* Pengalaman */
+.card {
+    width: 300px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pengalaman img {
+    height: 230px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.card-body {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+/* karya */
+/* karya */
+
+
+.badge {
+    background-color: var(--bg-first);
+    color: var(--btn-hovered);
+}
+.badge:hover, .badge:active, .badge:visited {
+    background-color: var(--btn-hovered) !important;
+}
+
+/* Swiper sweiper */
+/* Swiper sweiper */
+.swiper{
+    width: 950px;
+  }
+  .card1{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .card1::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: var(--bg-first);
+    border-radius: 20px 20px 0 0;
+  }
+  .card1 .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+  }
+  section .card1 .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--bg-first);
+  }
+  section .card1 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .card1 .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card1 .media-icons i{
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .card1 .media-icons i:hover{
+    opacity: 1;
+  }
+  .card1 .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  } 
+  .name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .name-profession .profession{
+    font-size:15px;
+    font-weight: 500;
+  }
+  .card1 .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+  }
+  .card1 .rating i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: var(--bg-first);
+  }
+  .card1 .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .card1 .button button{
+    background: var(--bg-first);
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .button button:hover{
+    background: var(--btn-hovered);
+  }
+  .swiper-pagination{
+    position: absolute;
+  }
+  .swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: var(--bg-first);
+  }
+  .swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: var(--bg-first);
+    transition: all 0.3s ease;
+  }
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: var(--btn-hovered);
+  }
+/*  */
+/*  */
+/* testimoni */
+/* testimonial */
+.testimonial > img {
+    height: 50px;
+    width: 50px;
+}
+/* Footer */
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    font-size: 1.25rem;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    display: block;
+    margin-top: auto
+}
+
+a img {
+    width: 100px;
+}
+
+
+/* CSS untuk footer dan copy-text */
+/* CSS untuk footer dan copy-text */
+.tj-footer-area {
+    background: var(--bg-first);
+    padding: 60px 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Footer Logo Box */
+/* Footer Logo Box */
+/* Footer Logo Box */
+/* Footer Logo Box */
+/* Container styling */
+/* Logo Styling */
+/* Logo Styling */
+/* Container for centering */
+.footer-logo-box {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 300px; /* Adjust height as needed */
+  position: relative; /* For positioning particles */
+}
+
+/* Logo Styling */
+#footer-logo img {
+  width: 100px; /* Default size */
+  height: 100px; /* Default size */
+  border-radius: 50%; /* Circular shape */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease, opacity 0.4s ease, background 0.4s ease; /* Smooth transitions */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  opacity: 0.9; /* Slightly transparent by default */
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)); /* Gradient background */
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Hover effect: enlarge, create a dynamic glow, and add a border */
+#footer-logo img:hover {
+  transform: scale(1.2) rotate(5deg); /* Enlarge and rotate the image */
+  filter: brightness(1.3) contrast(1.2); /* Increase brightness and contrast */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Increase shadow */
+  border: 4px solid rgba(255, 255, 255, 0.7); /* Add a semi-transparent border */
+  opacity: 1; /* Make fully opaque on hover */
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)); /* Update gradient on hover */
+  animation: particle-animation 1s infinite; /* Particle animation */
+}
+
+/* Click effect: shake, bounce, and add a glow */
+#footer-logo img.clicked {
+  animation: shake 0.5s ease, bounce 0.5s ease, glow 0.5s ease; /* Apply animations */
+}
+
+/* Particle animation */
+@keyframes particle-animation {
+  0% { transform: scale(1.2) rotate(5deg); }
+  50% { transform: scale(1.3) rotate(-5deg); }
+  100% { transform: scale(1.2) rotate(5deg); }
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: scale(1.2) rotate(5deg); }
+  25% { transform: scale(1.2) rotate(-5deg); }
+  50% { transform: scale(1.2) rotate(5deg); }
+  75% { transform: scale(1.2) rotate(-5deg); }
+  100% { transform: scale(1.2) rotate(5deg); }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+
+/* Glow animation for click effect */
+@keyframes glow {
+  0% { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); }
+  50% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); }
+  100% { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); }
+}
+
+/* Tooltip styling */
+.tooltip-inner {
+  background-color: #333; /* Dark background for tooltip */
+  color: #fff; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding */
+}
+
+/* Add a subtle particle effect */
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  animation: particle-move 2s infinite;
+}
+
+@keyframes particle-move {
+  0% { transform: translateY(0) scale(0.5); }
+  50% { transform: translateY(-20px) scale(1); }
+  100% { transform: translateY(0) scale(0.5); }
+}
+
+
+
+/*aaaaaaaaaaa*/
+/*aaaaaaaaaaa*/
+/*aaaaaaaaaaa*/
+/* Copy text styling */
+.copy-text {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.copy-text p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.copy-text a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.copy-text a:hover {
+  color: #f8f9fa; /* Adjusted for a lighter hover color */
+}
+
+/* Footer Menu Styling */
+.footer-menu {
+  margin-bottom: 30px;
+}
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-menu ul li a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-menu ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background: linear-gradient(260deg, #ffffff 0%, #007bf7 100%);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.footer-menu ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* AOS Data Animation */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="zoom-in"] {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+[data-aos="zoom-in"].aos-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+
